@@ -1,7 +1,12 @@
+.outer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
 .keys1 {
   display: flex;
   flex: 1;
-  min-height: 100vh;
+  min-height: 50vh;
   align-items: center;
   justify-content: center;
 }
@@ -13,8 +18,6 @@
   margin-left: 20px;
   background-color: #fff;
   line-height: 60px;
-  align-self: center;
-  vertical-align: center;
   text-align: center;
   -webkit-transition: 1s ease-in-out;
   -moz-transition: 1s ease-in-out;
@@ -30,6 +33,43 @@
 .scale {
   border: 2px solid blue;
 }
+.green {
+}
+
+.red {
+  width: 200px;
+  height: 120px;
+  text-align: center;
+  line-height: 120px;
+  font-size: 20px;
+  background-color: red;
+  margin-left: 100px;
+  border: none;
+  border-radius: 5px;
+}
+.showbox.green:hover {
+  background-color: red;
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+  -webkit-transform: scale(2);
+  -moz-transform: scale(2);
+  -o-transform: scale(2);
+  -ms-transform: scale(2);
+  transform: scale(2);
+}
+.showbox.red:hover {
+  background-color: #fff;
+  border-radius: 0px;
+  border: 2px solid green;
+  font-size: 35px;
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  -o-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
 .showbox.slideright:hover {
   -webkit-transform: translate(3em, 0);
   -moz-transform: translate(3em, 0);

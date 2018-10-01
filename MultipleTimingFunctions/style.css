@@ -1,0 +1,38 @@
+/* #outer {
+  display: flex;
+  flex: 1;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+} */
+
+#stage {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  background-color: #ddd;
+}
+#block {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: blue;
+  left: 0;
+  top: 0;
+  -webkit-transition-property: left, top, background, -webkit-transform;
+  transition-property: left, top, background, -webkit-transform;
+  -webkit-transition-duration: 2s, 2s, 1s, 2s;
+  transition-duration: 2s, 2s, 1s, 2s;
+  -webkit-transition-timing-function: ease-out, ease-in, linear, ease-in-out;
+  transition-timing-function: ease-out, ease-in, linear, ease-in-out;
+  -webkit-transition-delay: 0, 0, 0, 1s;
+  transition-delay: 0, 0, 0, 1s;
+}
+
+#stage:hover #block {
+  left: 100px;
+  top: 100px;
+  background: red;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
